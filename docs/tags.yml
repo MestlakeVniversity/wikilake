@@ -33,6 +33,11 @@
   permalink: '/miscs'
   description: '杂项'
 
+社团:
+  label: '社团'
+  permalink: '/clubs'
+  description: '社团'
+
 Alpha:
   label: 'α'
   permalink: '/alpha'
