@@ -79,7 +79,7 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [],
-      copyright: `Crafted with 💖 by WorldHim. Copyright © ${new Date().getFullYear()} WikiLake. Powered by Docusaurus.`,
+      copyright: `💖 WorldHim · 🦖 Docusaurus · 🚀 Netlify · © ${new Date().getFullYear()} WikiLake`,
     },
     prism: {
       theme: prismThemes.github,
