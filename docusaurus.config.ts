@@ -86,7 +86,7 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
     giscus: {
-      repo: 'WorldHim/wikilake',
+      repo: 'MestlakeVniversity/wikilake',
       repoId: process.env.GISCUS_REPO_ID,
       category: 'General',
       categoryId: process.env.GISCUS_CATEGORY_ID,
