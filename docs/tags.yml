@@ -1,0 +1,29 @@
+建筑:
+  label: '建筑'
+  permalink: '/buildings'
+  description: '西湖大学建筑群'
+
+餐饮:
+  label: '餐饮'
+  permalink: '/foods'
+  description: '餐饮测评'
+
+课程:
+  label: '课程'
+  permalink: '/courses'
+  description: '课程介绍与推荐'
+
+人物:
+  label: '人物'
+  permalink: '/people'
+  description: '尤物'
+
+工具:
+  label: '工具'
+  permalink: '/tools'
+  description: '工具'
+
+梗:
+  label: '梗'
+  permalink: '/memes'
+  description: '梗百科'
