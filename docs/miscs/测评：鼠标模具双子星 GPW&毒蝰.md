@@ -1,5 +1,5 @@
 ---
-tags: []
+tags: [杂项]
 ---
 
 # 测评：鼠标模具双子星 GPW&毒蝰
@@ -10,9 +10,23 @@ Cbwzb发布：
 
 GPW：让人感到匀称适中，抓握的时候背部能够很好的撑住手心，有一种掌握全局的感觉。
 
+![GPW1](/img/miscs/GPW1.jpg "GPW1")
+
+![GPW2](/img/miscs/GPW2.jpg "GPW2")
+
+![GPW3](/img/miscs/GPW3.jpg "GPW3")
+
 毒蝰：经过抓握优化，背部突起很高，手心前部有很大的顶手感，很有支撑，更多的是把你的手撑开进入高能状态的感觉。
 
+![Razer1](/img/miscs/Razer1.jpg "Razer1")
+
+![Razer2](/img/miscs/Razer2.jpg "Razer2")
+
 这是两个鼠标的手接触区域示意图（本人手长21.5cm左右）
+
+![GPW](/img/miscs/GPW.jpg "GPW")
+
+![Razer](/img/miscs/Razer.jpg "Razer")
 
 对于手小的同学或者是女生，这两个模具都有对应的等比例缩小版（罗技有GPW小狗，雷蛇有毒蝰mini（价格不菲），还有国产仿制供你选择）
 

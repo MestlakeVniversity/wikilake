@@ -27,3 +27,8 @@
   label: '梗'
   permalink: '/memes'
   description: '梗百科'
+
+杂项:
+  label: '杂项'
+  permalink: '/miscs'
+  description: '杂项'
