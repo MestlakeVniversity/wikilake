@@ -32,3 +32,23 @@
   label: '杂项'
   permalink: '/miscs'
   description: '杂项'
+
+Alpha:
+  label: 'α'
+  permalink: '/alpha'
+  description: 'α 书院人员'
+
+Beta:
+  label: 'β'
+  permalink: '/beta'
+  description: 'β 书院人员'
+
+Gamma:
+  label: 'γ'
+  permalink: '/gamma'
+  description: 'γ 书院人员'
+
+Delta:
+  label: 'δ'
+  permalink: '/delta'
+  description: 'δ 书院人员'

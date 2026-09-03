@@ -1,5 +1,5 @@
 ---
-tags: [人物]
+tags: [人物, Delta]
 ---
 
 # Jiahang Yao
