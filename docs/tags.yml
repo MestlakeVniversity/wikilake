@@ -38,6 +38,11 @@
   permalink: '/clubs'
   description: '社团'
 
+指南:
+  label: '指南'
+  permalink: 'guides'
+  description: '指南'
+
 Alpha:
   label: 'α'
   permalink: '/alpha'
