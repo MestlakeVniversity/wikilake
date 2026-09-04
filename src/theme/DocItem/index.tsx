@@ -10,6 +10,7 @@ export default function DocItemWrapper(props: Props): ReactNode {
   return (
     <>
       <DocItem {...props} />
+      <hr className="doc-comments-divider" />
       <Comment />
     </>
   );
