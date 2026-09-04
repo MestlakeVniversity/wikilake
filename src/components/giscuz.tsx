@@ -5,7 +5,7 @@ import { useLocation } from '@docusaurus/router';
 
 const defaultConfig: Partial<GiscusProps> = {
   id: 'comments',
-  mapping: 'specific',
+  mapping: 'pathname',
   reactionsEnabled: '1',
   emitMetadata: '0',
   inputPosition: 'top',
@@ -14,10 +14,15 @@ const defaultConfig: Partial<GiscusProps> = {
   lang: 'zh-CN',
 }
 
-export default function Comment(): JSX.Element {
+export default function Comment(): React.JSX.Element {
   const themeConfig = useThemeConfig()
+  const { pathname } = useLocation()
+  const colorMode = useColorMode().colorMode
 
-  const giscus = { ...defaultConfig, ...themeConfig.giscus }
+  const giscus = {
+    ...defaultConfig,
+    ...(themeConfig as typeof themeConfig & { giscus?: Partial<GiscusProps> }).giscus,
+  }
 
   if (!giscus.repo || !giscus.repoId || !giscus.categoryId) {
     throw new Error(
@@ -25,20 +30,9 @@ export default function Comment(): JSX.Element {
     )
   }
 
-  const path = useLocation().pathname.replace(/^\/|\/$/g, '');
-  const firstSlashIndex = path.indexOf('/');
-  var subPath: string = ""
-  if (firstSlashIndex !== -1) {
-    subPath = path.substring(firstSlashIndex + 1)
-  } else {
-    subPath = "index"
-  }
-
-  giscus.term = subPath
-  giscus.theme =
-    useColorMode().colorMode === 'dark' ? 'transparent_dark' : 'light'
+  giscus.theme = colorMode === 'dark' ? 'transparent_dark' : 'light'
 
   return (
-    <Giscus {...giscus} />
+    <Giscus {...(giscus as GiscusProps)} key={pathname} />
   )
 }
