@@ -1,5 +1,3 @@
-import 'dotenv/config';
-
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -89,9 +87,9 @@ const config: Config = {
     },
     giscus: {
       repo: 'MestlakeVniversity/wikilake',
-      repoId: process.env.GISCUS_REPO_ID,
+      repoId: 'R_kgDOUMwTaw',
       category: 'General',
-      categoryId: process.env.GISCUS_CATEGORY_ID,
+      categoryId: 'DIC_kwDOUMwTa84DExlf',
     },
   } satisfies Preset.ThemeConfig,
 };
