@@ -10,9 +10,11 @@ tags: [工具]
 
 作为解除方法，按F12打开控制台在下方输入
 
+```
 document.addEventListener('paste', function(e) {
     e.stopImmediatePropagation();
 }, true);
+```
 
 回车即可
 
