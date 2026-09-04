@@ -87,9 +87,9 @@ const config: Config = {
     },
     giscus: {
       repo: 'MestlakeVniversity/wikilake',
-      repoId: process.env.GISCUS_REPO_ID,
+      repoId: 'R_kgDOUMwTaw',
       category: 'General',
-      categoryId: process.env.GISCUS_CATEGORY_ID,
+      categoryId: 'DIC_kwDOUMwTa84DExlf',
     },
   } satisfies Preset.ThemeConfig,
 };
