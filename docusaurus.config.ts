@@ -79,7 +79,7 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [],
-      copyright: `💖 WorldHim · 🦖 Docusaurus · 🚀 Netlify · ©️ ${new Date().getFullYear()} WikiLake`,
+      copyright: `💖 WorldHim & MestlakeVniversity · 🦖 Docusaurus · 🚀 Netlify · ©️ ${new Date().getFullYear()} WikiLake`,
     },
     prism: {
       theme: prismThemes.github,
