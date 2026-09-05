@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/WorldHim/wikilake/tree/master/',
+            'https://github.com/MestlakeVniversity/wikilake/tree/master/',
           showLastUpdateTime: true,
         },
         blog: false,
@@ -70,7 +70,7 @@ const config: Config = {
       },
       items: [
         {
-          href: 'https://github.com/WorldHim/wikilake',
+          href: 'https://github.com/MestlakeVniversity/wikilake',
           label: 'GitHub',
           position: 'right',
         },
