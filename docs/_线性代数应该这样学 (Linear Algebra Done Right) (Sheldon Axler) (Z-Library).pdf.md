@@ -8,4 +8,4 @@ tags: []
 
 - [(Linear Algebra Done Right) (Sheldon Axler) (Z-Library).pdf 点击下载 线性代数应该这样学 (Linear Algebra Done Right) (Sheldon Axler) (Z-Library).pdf](https://pan.wikilake.cn/wikilake/线性代数应该这样学)
 
-[分类:资料与工具分享](./分类_资料与工具分享.md "分类:资料与工具分享")
+[分类:资料与工具分享](./分类_资料与工具分享.md)

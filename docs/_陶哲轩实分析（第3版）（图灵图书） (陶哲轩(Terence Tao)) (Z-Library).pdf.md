@@ -8,4 +8,4 @@ tags: []
 
 - \[<https://pan.wikilake.cn/wikilake/陶哲轩实分析（第3版>）（图灵图书） (陶哲轩(Terence Tao)) (Z-Library).pdf 点击下载 陶哲轩实分析（第3版）（图灵图书） (陶哲轩(Terence Tao)) (Z-Library).pdf\]
 
-[分类:资料与工具分享](./分类_资料与工具分享.md "分类:资料与工具分享")
+[分类:资料与工具分享](./分类_资料与工具分享.md)

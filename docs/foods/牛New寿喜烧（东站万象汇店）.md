@@ -9,24 +9,24 @@ tags: [餐饮]
 
 补充:基础款有牛上脑，牛排肉部位的肉，还有五花，羊肉，黄喉。个人喜好锅底是寿喜锅+猪肚鸡
 
-![杭州东站](/img/foods/杭州东站.jpg "杭州东站")
+![杭州东站](/img/foods/杭州东站.jpg)
 
-![杭州东站牛new1](/img/foods/杭州东站牛new1.jpg "杭州东站牛new1")
+![杭州东站牛new1](/img/foods/杭州东站牛new1.jpg)
 
-![杭州东站牛new海鲜](/img/foods/杭州东站牛new海鲜.jpg "杭州东站牛new海鲜")
+![杭州东站牛new海鲜](/img/foods/杭州东站牛new海鲜.jpg)
 
-![杭州东站牛new和牛](/img/foods/杭州东站牛new和牛.jpg "杭州东站牛new和牛")
+![杭州东站牛new和牛](/img/foods/杭州东站牛new和牛.jpg)
 
-![杭州东站牛new肉类](/img/foods/杭州东站牛new肉类.jpg "杭州东站牛new肉类")
+![杭州东站牛new肉类](/img/foods/杭州东站牛new肉类.jpg)
 
-![杭州东站牛new肉山](/img/foods/杭州东站牛new肉山.jpg "杭州东站牛new肉山")
+![杭州东站牛new肉山](/img/foods/杭州东站牛new肉山.jpg)
 
-![杭州东站牛new生蚝榴莲](/img/foods/杭州东站牛new生蚝榴莲.jpg "杭州东站牛new生蚝榴莲")
+![杭州东站牛new生蚝榴莲](/img/foods/杭州东站牛new生蚝榴莲.jpg)
 
-![杭州东站牛new水果](/img/foods/杭州东站牛new水果.jpg "杭州东站牛new水果")
+![杭州东站牛new水果](/img/foods/杭州东站牛new水果.jpg)
 
-![杭州东站牛new甜品](/img/foods/杭州东站牛new甜品.jpg "杭州东站牛new甜品")
+![杭州东站牛new甜品](/img/foods/杭州东站牛new甜品.jpg)
 
-![杭州东站牛new饮品](/img/foods/杭州东站牛new饮品.jpg "杭州东站牛new饮品")
+![杭州东站牛new饮品](/img/foods/杭州东站牛new饮品.jpg)
 
-![杭州东站牛new蘸蛋](/img/foods/杭州东站牛new蘸蛋.jpg "杭州东站牛new蘸蛋")
+![杭州东站牛new蘸蛋](/img/foods/杭州东站牛new蘸蛋.jpg)

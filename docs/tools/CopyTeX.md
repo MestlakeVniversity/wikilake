@@ -8,4 +8,4 @@ tags: [工具]
 
 [CopyTeX](https://chromewebstore.google.com/detail/copytex-%E2%80%93-instantly-copy/dnkgkjeghbgobiflkonjgnfdejoeeocg)
 
-[分类:资料与工具分享](./分类_资料与工具分享.md "分类:资料与工具分享")
+[分类:资料与工具分享](./分类_资料与工具分享.md)

@@ -7,4 +7,4 @@ tags: []
 
 - [lecturenote.zip 点击下载 优化模型 lecturenote.zip](https://pan.wikilake.cn/wikilake/优化模型)
 
-[分类:资料与工具分享](./分类_资料与工具分享.md "分类:资料与工具分享")
+[分类:资料与工具分享](./分类_资料与工具分享.md)
