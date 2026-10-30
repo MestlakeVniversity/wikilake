@@ -4,8 +4,7 @@
  * work well for content-centric websites.
  */
 
-/* 界面主题色:取自导航栏 logo 文字标志 SVG 中的两个品牌色
-   亮色模式 #004990(logo 深蓝文字)、暗色模式 #f18d00(logo 橙色弧线) */
+/* 界面主题色：亮色模式 #004990、暗色模式 #f18d00 */
 :root {
   --ifm-color-primary: #004990;
   --ifm-color-primary-dark: #004282;
@@ -30,9 +29,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* 首页 hero(暗色):用品牌深蓝色块 + 橙色文字，与亮色模式布局统一。
-   注意:Infima 把 hero 变量直接定义在 .hero--primary 元素上，从
-   [data-theme] 继承会被元素自身定义覆盖，因此必须用更高特异性直接覆盖 */
+/* 首页暗色 */
 [data-theme='dark'] .hero--primary {
   --ifm-hero-background-color: #123a5e;
   --ifm-hero-text-color: #f18d00;
@@ -44,7 +41,7 @@
   background-color: var(--ifm-color-emphasis-200);
 }
 
-/* 导航栏右侧的 GitHub 图标链接(统一黑白:亮色模式黑、暗色模式白，悬停不变色) */
+/* 导航栏右侧的 GitHub 图标链接 */
 .navbar .github-icon svg {
   display: block;
   width: 24px;
@@ -56,25 +53,23 @@
   fill: #fff;
 }
 
-/* HPC 服务状态嵌入卡片(embed=1 网格视图;上游视图为组件内部状态,URL 无法控制)。
-   高度 600px ≈ 工具栏 + 两行服务卡片,超出部分滚动隐藏 */
+/* HPC 服务状态嵌入卡片 */
 .hpc-embed iframe {
   display: block;
   width: 100%;
   height: 540px;
   border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: var(--ifm-card-border-radius, 8px);
+  border-radius: var(--ifm-card-border-radius);
   background: #f3f7fc;
 }
 
-/* 暗色模式:跨域 iframe 无法改其内部主题,用反色让白底变黑底,色相转回保持原配色 */
+/* 暗色模式:跨域 iframe 使用反色让白底变黑底。 */
 [data-theme='dark'] .hpc-embed iframe {
   filter: invert(1) hue-rotate(180deg);
-  background: #020617;
   border-color: var(--ifm-color-emphasis-300);
 }
 
-/* ===== 黑幕（萌百同款，全主题统一） =====
+/* ===== 黑幕=====
    与主题无关：浅色 / 暗色 / 跟随系统三种模式都表现为黑底遮字，
    悬停或点击（focus）后黑底不变、文字反色（白色）显现。 */
 .spoiler {
@@ -115,8 +110,7 @@
   filter: none !important;
 }
 
-/* 暗色模式下只画一圈细描边，方便在黑底页面上看清黑块边界；
-   不改变遮罩与揭示的颜色，不想要可整段删除。 */
+/* 暗色模式下只画一圈细描边，方便在黑底页面上看清黑块边界 */
 [data-theme='dark'] .spoiler {
   outline: 1px solid rgba(255, 255, 255, 0.22);
   outline-offset: -1px;
