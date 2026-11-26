@@ -1,5 +1,5 @@
 ---
-sidebar_position: -2
+sidebar_position: -1
 ---
 
 # WikiLake 公约
@@ -29,9 +29,21 @@ sidebar_position: -2
 - **禁止破坏行为**：严禁恶意清空页面内容、擅自篡改他人词条的客观事实；
 - **署名规范**：尊重他人劳动成果，在引用非原创内容时，请注明来源。
 
+## 许可协议
+
+本站所有内容除特别声明外，均采用 CC BY-NC-SA 4.0 协议授权。
+详细内容请见 [许可协议](./license)
+
 ## 结语
 
 WikiLake 需要每一位西湖同学的支持。我们鼓励记录真实的校园生活、科研经验和学术知识。让我们共同守护这片净土，为构建更好的西湖大学校园氛围贡献力量！
 
 本公约最终解释权归 WikiLake 团队所有。
 
+# 贡献者
+
+WikiLake 感谢每一位贡献者
+
+以下是 WikeLake 仓库的贡献者列表
+
+[![Contributors](https://contrib.rocks/image?repo=MestlakeVniversity/wikilake&anon=1)](https://github.com/MestlakeVniversity/wikilake/graphs/contributors)
