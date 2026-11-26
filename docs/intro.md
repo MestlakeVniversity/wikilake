@@ -32,7 +32,7 @@ sidebar_position: -1
 ## 许可协议
 
 本站所有内容除特别声明外，均采用 CC BY-NC-SA 4.0 协议授权。
-详细内容请见 [许可协议](./license)
+详细内容请见 [许可协议](./license)。
 
 ## 结语
 
@@ -42,8 +42,8 @@ WikiLake 需要每一位西湖同学的支持。我们鼓励记录真实的校�
 
 # 贡献者
 
-WikiLake 感谢每一位贡献者
+WikiLake 感谢每一位贡献者。
 
-以下是 WikeLake 仓库的贡献者列表
+以下是 WikeLake 仓库的贡献者列表：
 
 [![Contributors](https://contrib.rocks/image?repo=MestlakeVniversity/wikilake&anon=1)](https://github.com/MestlakeVniversity/wikilake/graphs/contributors)
