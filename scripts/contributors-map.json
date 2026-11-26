@@ -1,0 +1,49 @@
+{
+  "$comment": "键用小写邮箱；profileUrl 为 null 表示账号已注销，只显示头像不生成链接。",
+  "worldhim@hotmail.com": {
+    "name": "WorldHim",
+    "githubUsername": "WorldHim"
+  },
+  "lijinrui080327@163.com": {
+    "name": "Jerry-0327",
+    "githubUsername": "Jerry-0327"
+  },
+  "vk9jhwwrwr@privaterelay.appleid.com": {
+    "name": "toby600",
+    "githubUsername": "toby600",
+    "profileUrl": null
+  },
+  "t81585213@126.com": {
+    "name": "Scien-Tis-T",
+    "githubUsername": "Scien-Tis-T"
+  },
+  "liuyiting77@westlake.edu.cn": {
+    "name": "salt-web",
+    "githubUsername": "salt-web"
+  },
+  "2100578968@qq.com": {
+    "name": "oldVC-1",
+    "githubUsername": "oldVC-1"
+  },
+  "wilderness_114514@outlook.com": {
+    "name": "WilderStill",
+    "githubUsername": "WilderStill"
+  },
+  "zhangliyang@westlake.edu.cn": {
+    "name": "LandingStar",
+    "githubUsername": "LandingStar",
+    "profileUrl": null
+  },
+  "salomejlq@gmail.com": {
+    "name": "GorensteinJLQ",
+    "githubUsername": "GorensteinJLQ"
+  },
+  "92072055+dbinary@users.noreply.github.com": {
+    "name": "DBinary",
+    "githubUsername": "DBinary"
+  },
+  "1364283898@qq.com": {
+    "name": "AHKriks",
+    "githubUsername": "AHKriks"
+  }
+}
