@@ -36,6 +36,11 @@ const config: Config = {
 
   onBrokenLinks: 'warn',
 
+  // 贡献者数据由 Actions 生成并推送到 contributors 分支，Netlify 再把它代理成同源地址
+  customFields: {
+    contributorsUrl: process.env.CONTRIBUTORS_JSON_URL || '/contributors.json',
+  },
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".

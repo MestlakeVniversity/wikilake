@@ -8,6 +8,9 @@
 .docusaurus
 .cache-loader
 
+# 贡献者数据只存在于 contributors 分支，本地生成时也不进 master
+/contributors.json
+
 # Misc
 .DS_Store
 .vscode/

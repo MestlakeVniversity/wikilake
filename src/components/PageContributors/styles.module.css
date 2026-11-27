@@ -1,0 +1,105 @@
+.contributors {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 0.9rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  width: 6.5rem;
+  text-decoration: none;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.visuallyHidden {
+  position: absolute;
+  clip-path: inset(50%);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
+a.link:hover {
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+}
+
+a.link:focus-visible {
+  outline: 2px solid CanvasText;
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  object-fit: cover;
+  transition:
+    border-color var(--ifm-transition-fast) var(--ifm-transition-timing-default),
+    transform var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+a.link:hover .avatar {
+  border-color: var(--ifm-color-primary);
+  transform: scale(1.08);
+}
+
+.login {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar {
+    transition: none;
+  }
+
+  a.link:hover .avatar {
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .list {
+    gap: 0.75rem;
+  }
+
+  .link {
+    width: 4.5rem;
+  }
+
+  .avatar {
+    width: 3rem;
+    height: 3rem;
+  }
+}

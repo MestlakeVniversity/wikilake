@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+  # contributors 分支只存生成器与数据，跳过它的整站构建
+  ignore = "test \"$BRANCH\" = \"contributors\""
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# 把数据分支的 JSON 代理成同源地址，浏览器不直连 GitHub
+[[redirects]]
+  from = "/contributors.json"
+  to = "https://raw.githubusercontent.com/MestlakeVniversity/wikilake/contributors/contributors.json"
+  status = 200
+  force = true
+  [redirects.headers]
+    Cache-Control = "public, max-age=300"

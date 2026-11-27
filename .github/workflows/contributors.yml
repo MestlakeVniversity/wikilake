@@ -1,0 +1,76 @@
+name: Contributors Data
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contributors-data
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+    steps:
+      # 全量历史，否则 --follow 追不到改名之前的提交
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      # 生成器住在 contributors 分支，临时借到工作区使用，不提交回 master
+      - name: Fetch generator from contributors branch
+        run: |
+          set -euo pipefail
+          git fetch --depth=1 origin contributors
+          git checkout FETCH_HEAD -- scripts
+
+      - name: Generate contributors data
+        run: node scripts/fetch-contributors.js
+
+      # 内容没变就什么都不做，避免空提交
+      - name: Publish to contributors branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          BRANCH="contributors"
+          WORK="$RUNNER_TEMP/publish"
+          REMOTE="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          if git ls-remote --exit-code --heads "$REMOTE" "$BRANCH" >/dev/null 2>&1; then
+            git fetch --depth=1 "$REMOTE" "$BRANCH"
+            if git show FETCH_HEAD:contributors.json > "$RUNNER_TEMP/previous.json" 2>/dev/null &&
+               cmp -s "$RUNNER_TEMP/previous.json" contributors.json; then
+              echo "数据未变化，跳过提交。"
+              exit 0
+            fi
+          fi
+
+          mkdir -p "$WORK/scripts"
+          cp -r scripts/. "$WORK/scripts/"
+          cp contributors.json "$WORK/contributors.json"
+          cd "$WORK"
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q -b "$BRANCH"
+          git remote add origin "$REMOTE"
+          git add -A
+          git commit -q -m "chore: 更新贡献者数据（$(date -u +%Y-%m-%dT%H:%M:%SZ)）"
+          git push --force origin "HEAD:${BRANCH}"
+          echo "已推送到 ${BRANCH} 分支：$(git rev-parse --short HEAD)"
+
+      - name: Trigger Netlify rebuild
+        if: env.NETLIFY_BUILD_HOOK != ''
+        run: curl -fsS -X POST -o /dev/null "$NETLIFY_BUILD_HOOK"
